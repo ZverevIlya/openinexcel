@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "sourceMap": false,
+        "rootDir": "./scripts",
+        "outDir": "./dist/scripts"
+    },
+    "filesGlob": [
+        "./scripts/**/*.ts",
+        "./typings/index.d.ts"
+    ],
+    "files": [
+        "scripts/app.ts",
+        "typings/index.d.ts"
+    ]
+}

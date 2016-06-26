@@ -1,0 +1,80 @@
+{
+    "manifestVersion": 1,
+    "id": "vsts-open-work-items-in-excel",
+    "version": "0.1.0",
+    "name": "vsts-open-work-items-in-excel",
+    "scopes": [ "vso.work", "vso.work_write" ],
+    "description": "This extension opens work item query result in Excel (from Web)",
+    "publisher": "vanvanvania",
+    "icons": {
+        "default": "img/logo.png"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "tags": [
+        "Sample"
+    ],
+    "content": {
+        "details": {
+            "path": "details.md"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "https://bit.ly"
+        },
+        "getstarted": {
+            "uri": "https://bit.ly"
+        },
+        "learn": {
+            "uri": "https://bit.ly"
+        },
+        "support": {
+            "uri": "https://bit.ly"
+        },
+        "repository": {
+            "uri": "https://bit.ly"
+        },
+        "issues": {
+            "uri": "https://bit.ly"
+        }
+    },
+    "branding": {
+        "color": "rgb(220, 235, 252)",
+        "theme": "light"
+    },
+    "files": [
+        {
+            "path": "img",
+            "addressable": true
+        },
+        {
+            "path": "scripts",
+            "addressable": true
+        },
+        {
+            "path": "index.html",
+            "addressable": true
+        }
+    ],
+    "categories": [
+        "Integrate"
+    ],
+    "contributions": [
+        {
+            "id": "vsts-open-work-items-in-excel",
+            "type": "ms.vss-web.action-provider",
+            "description": "",
+            "targets": [
+                "ms.vss-work-web.work-item-context-menu"
+            ],
+            "properties": {
+                "group": "contributed",
+                "uri": "index.html"
+            }
+        }
+    ]
+}
