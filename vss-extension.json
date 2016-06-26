@@ -1,6 +1,6 @@
 {
     "manifestVersion": 1,
-    "id": "vsts-open-work-items-in-excel",
+    "id": "vsts-open-work-items-in-excel-again",
     "version": "0.1.0",
     "name": "vsts-open-work-items-in-excel",
     "scopes": [ "vso.work", "vso.work_write" ],
@@ -56,7 +56,7 @@
             "addressable": true
         },
         {
-            "path": "index.html",
+            "path": "action.html",
             "addressable": true
         }
     ],
@@ -65,15 +65,16 @@
     ],
     "contributions": [
         {
-            "id": "vsts-open-work-items-in-excel",
-            "type": "ms.vss-web.action-provider",
-            "description": "",
+            "id": "myAction",
+            "type": "ms.vss-web.action",
+            "description": "Open in Excel",
             "targets": [
-                "ms.vss-work-web.work-item-context-menu"
+                "ms.vss-work-web.work-item-query-menu"
             ],
             "properties": {
-                "group": "contributed",
-                "uri": "index.html"
+            	"text": "Open this shizzle in Excelizzle",
+            	"title": "Open in Excel",
+                "uri": "action.html"
             }
         }
     ]
