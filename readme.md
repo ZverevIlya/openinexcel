@@ -1,6 +1,6 @@
-## vsts-extension-ts-seed-simple ##
+## VSTS Extension Open Work Items in Excel ##
 
-Very simple seed project for developing VSTS extensions using Typescript. Utilizes Typescript, grunt, and tsd. Detailed explanation how to get started can be found at https://cschleiden.wordpress.com/2016/02/24/extending-vsts-setup/.
+An extension for Team Services that enables opening query result in Excel from the web. Forked from cschleiden's example. Utilizes Typescript, grunt, and tsd. 
 
 ### Structure ###
 
@@ -35,8 +35,4 @@ Note: To avoid `tfx` prompting for your token when publishing, login in beforeha
 
 #### Including framework modules ####
 
-The VSTS framework is setup to initalize the requirejs AMD loader, so just use `import Foo = require("foo")` to include framework modules.
-
-#### VS Code ####
-
-The included `.vscode` config allows you to open and build the project using [VS Code](https://code.visualstudio.com/).
+The VSTS framework is setup to initialize the requirejs AMD loader, so just use `import Foo = require("foo")` to include framework modules.
