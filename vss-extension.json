@@ -1,8 +1,8 @@
 {
     "manifestVersion": 1,
-    "id": "vsts-open-work-items-in-excel-again",
+    "id": "vsts-open-work-items-in-excel",
     "version": "0.1.0",
-    "name": "vsts-open-work-items-in-excel",
+    "name": "VSTS Open in Excel",
     "scopes": [ "vso.work", "vso.work_write" ],
     "description": "This extension opens work item query result in Excel (from Web)",
     "publisher": "vanvanvania",
@@ -23,9 +23,6 @@
         }
     },
     "links": {
-        "home": {
-            "uri": "https://bit.ly"
-        },
         "getstarted": {
             "uri": "https://bit.ly"
         },
@@ -34,17 +31,11 @@
         },
         "support": {
             "uri": "https://bit.ly"
-        },
-        "repository": {
-            "uri": "https://bit.ly"
-        },
-        "issues": {
-            "uri": "https://bit.ly"
         }
     },
     "branding": {
-        "color": "rgb(220, 235, 252)",
-        "theme": "light"
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
     },
     "files": [
         {
@@ -72,7 +63,7 @@
                 "ms.vss-work-web.work-item-query-menu"
             ],
             "properties": {
-            	"text": "Open this shizzle in Excelizzle",
+            	"text": "Open in Excel",
             	"title": "Open in Excel",
                 "uri": "action.html"
             }
