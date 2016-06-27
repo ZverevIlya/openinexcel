@@ -4,8 +4,7 @@ var myAction =  {
             title: "Open in Excel",
             action: (actionContext) => {
                 let query = actionContext; 
-                
-                alert(actionContext);
+                window.location.href="tfs://Requirements/CreateStoryboard?";
             }
         }];
     }
