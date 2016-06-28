@@ -2,9 +2,9 @@ var myAction =  {
     getMenuItems: (context) => {
         return [<IContributedMenuItem>{
             title: "Open in Excel",
-            action: (actionContext) => {
-                let query = actionContext; 
-                window.location.href="tfs://Requirements/CreateStoryboard?";
+            action: (actionContext) => { 
+                alert(actionContext["query"]["id"]);
+                //window.location.href="tfs://Requirements/CreateStoryboard?";
             }
         }];
     }
