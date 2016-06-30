@@ -3,8 +3,15 @@ var myAction =  {
         return [<IContributedMenuItem>{
             title: "Open in Excel",
             action: (actionContext) => { 
-                alert(actionContext["query"]["id"]);
-                //window.location.href="tfs://Requirements/CreateStoryboard?";
+            	//From actionContext, get the query ID selected
+                var qid = actionContext["query"]["id"];
+
+                //From web context, get collectionUri and projectName
+                var context = VSS.getWebContext();
+                var collectionUri = context["collection"]["uri"];
+                var projectName = context["project"]["name"];
+
+                window.location.href="tfs://ExcelRequirements/OpenItems?cn="+collectionUri+"&proj="+projectName+"&qid="+qid;
             }
         }];
     }
