@@ -34,8 +34,8 @@
         }
     },
     "branding": {
-        "color": "rgb(34, 34, 34)",
-        "theme": "dark"
+        "color": "rgb(255, 255, 255)",
+        "theme": "light"
     },
     "files": [
         {
@@ -65,6 +65,19 @@
             "properties": {
             	"text": "Open in Excel",
             	"title": "Open in Excel",
+                "uri": "action.html"
+            }
+        },
+        {
+            "id": "openWorkItemsAction",
+            "type": "ms.vss-web.action-provider",
+            "description": "Open in Excel",
+            "targets": [
+                "ms.vss-work-web.work-item-context-menu"
+            ],
+            "properties": {
+                "text": "Open in Excel",
+                "title": "Open in Excel",
                 "uri": "action.html"
             }
         }
