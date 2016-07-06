@@ -56,7 +56,7 @@
     ],
     "contributions": [
         {
-            "id": "myAction",
+            "id": "openQueryAction",
             "type": "ms.vss-web.action",
             "description": "Open in Excel",
             "targets": [
