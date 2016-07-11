@@ -2,6 +2,9 @@
 
 An extension for Team Services that enables opening query result in Excel from the web. Forked from cschleiden's example. Utilizes Typescript, grunt, and tsd. 
 
+### Example ###
+[OpenInExcel.gif]
+
 ### Structure ###
 
 ```
