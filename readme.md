@@ -1,12 +1,13 @@
 ## VSTS Extension Open Work Items in Excel ##
 
-Requires Visual Studio DEV15 and Excel. 
+**Requires Visual Studio DEV15 and Excel.**
+
 An extension for Team Services that enables opening query result in Excel from the web. Forked from cschleiden's example. Utilizes Typescript, grunt, and tsd. 
 
 ### Example ###
 ![Open in Excel scenarios](img/OpenInExcel.gif?raw=true)
 
-### Support Scenarios ###
+### Supported Scenarios ###
 * Open Work Item Query (entire query) in Excel 
 * Open selected Work Items in Excel 
 
