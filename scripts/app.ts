@@ -50,7 +50,13 @@ var openWorkItemsAction =  {
                 var projectName = context["project"]["name"];
 
                 var uri = "tfs://ExcelRequirements/OpenSelections?cn="+collectionUri+"&proj="+projectName+"&wids="+wids+"&columns="+columns;
-                window.location.href= uri;
+                var n = uri.length;
+                if (n > 2000) {
+                	alert("You've selected too many fields and/or Work Items. Try exporting the Work Item Query instead.")
+                } 
+                else {
+                	window.location.href= uri;
+                }
             }
         }];
     }
