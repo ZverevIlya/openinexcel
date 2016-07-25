@@ -39,14 +39,12 @@ var openWorkItemsAction =  {
 				var wids = actionContext.ids;
                 var columns = actionContext["columns"];
 
-                alert(JSON.stringify(actionContext));
-
                 //From web context, get collectionUri and projectName
-                /*var context = VSS.getWebContext();
+                var context = VSS.getWebContext();
                 var collectionUri = context["collection"]["uri"];
                 var projectName = context["project"]["name"];
 
-                var uri = "tfs://ExcelRequirements/OpenItems?cn="+collectionUri+"&proj="+projectName+"&wids="+wids+"&columns="+columns;
+                var uri = "tfs://ExcelRequirements/OpenItems?cn="+collectionUri+"&proj="+projectName+"&wid="+wids+"&columns="+columns;
                 var n = uri.length;
                 if (n > 2000) {
                 	alert("You've selected too many fields and/or Work Items. Try exporting the Work Item Query instead.")
@@ -54,7 +52,7 @@ var openWorkItemsAction =  {
                 else {
                     window.location.href= uri;
                 }
-                */
+                
             }
         }];
     }
