@@ -4,10 +4,10 @@
     "version": "0.1.0",
     "name": "VSTS Open in Excel",
     "scopes": [ "vso.work", "vso.work_write" ],
-    "description": "This extension opens work item query result in Excel (from Web)",
-    "publisher": "vanvanvania",
+    "description": "This extension opens work items in Excel from VSTS",
+    "publisher": "MicrosoftDeveloper",
     "icons": {
-        "default": "img/logo.png"
+        "default": "img/excellogo.png"
     },
     "targets": [
         {
@@ -15,7 +15,7 @@
         }
     ],
     "tags": [
-        "Sample"
+        "work items", "Excel"
     ],
     "content": {
         "details": {
@@ -34,8 +34,8 @@
         }
     },
     "branding": {
-        "color": "rgb(255, 255, 255)",
-        "theme": "light"
+        "color": "rgb(92, 45, 145)",
+        "theme": "dark"
     },
     "files": [
         {
@@ -52,7 +52,7 @@
         }
     ],
     "categories": [
-        "Integrate"
+        "Plan and track"
     ],
     "contributions": [
         {
@@ -64,7 +64,7 @@
             ],
             "properties": {
             	"text": "Open in Excel",
-            	"title": "Requires Visual Studio DEV15",
+            	"title": "Requires Visual Studio '15'",
                 "uri": "action.html"
             }
         },
@@ -78,6 +78,7 @@
             "properties": {
                 "text": "Open in Excel",
                 "title": "Open in Excel",
+                "icon": "img/miniexcellogo.png",
                 "uri": "action.html"
             }
         },

@@ -10,8 +10,9 @@ var openQueryAction =  {
     	}
     	else {
         return [<IContributedMenuItem>{
-            title: "Requires DEV15",
+            title: "Requires Visual Studio '15'",
         	text: "Open in Excel",
+            icon: "img/miniexcellogo.png",
             action: (actionContext) => { 
 
             	//From actionContext, get the query ID selected
@@ -34,7 +35,9 @@ var openQueryAction =  {
 var openWorkItemsAction =  {
     getMenuItems: (context) => {
         return [<IContributedMenuItem>{
-            title: "Open in Excel",
+            title: "Requires Visual Studio '15'",
+            text: "Open in Excel",
+            icon: "img/miniexcellogo.png",
             action: (actionContext) => { 
 				var wids = actionContext.ids;
                 var columns = actionContext["columns"];
@@ -62,7 +65,10 @@ var openQueryOnToolbarAction = {
 	getMenuItems: (context) => {
 		return [<IContributedMenuItem>{
 			title: "Open in Excel",
+            toolbarText: "Open in Excel",
+            icon: "img/miniexcellogo.png",
 			action: (actionContext) => {
+                var webContext = VSS.getWebContext(); 
 				alert(JSON.stringify(actionContext));
 			}
 		}];
