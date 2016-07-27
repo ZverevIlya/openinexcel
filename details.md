@@ -1,7 +1,7 @@
 # VSTS Open Work Items in Excel #
 
-**Important: This extension requires every user to have Microsoft Excel and Visual Studio '15' installed on device used.**
-This extension enables opening works items in Excel, which may be helpful for editing multiple work items (bulk editing) or for analyzing and visualizing a large amount of work items. Work items that are opened in Excel can be edited and published back to Visual Studio Team Services.  
+**Important: This extension requires every user to have Microsoft Excel and the latest version of Visual Studio (found at www.visualstudio.com) installed on device used.**
+This extension enables the opening works items in Excel, which is helpful for editing multiple work items (bulk editing) or for analyzing and visualizing a large amount of work items. Work items that are opened in Excel can be edited and published back to Visual Studio Team Services. Once you are ready to publish your changes, click "Publish" from Excel to sync your changes back to VSTS. 
 
 ###Open an entire query in Excel for editing, data analysis and more
 To open an entire query in Excel, go to Work > Queries and select the query you'd like to open. After installing this extension on your project, you'll see the option to "Open in Excel" when you right-click on the selected query. 

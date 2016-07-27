@@ -6,23 +6,18 @@
    <script src="scripts/VSS.SDK.min.js"></script>
  </head>
  <body>
-   <script>
+   <script type="text/javascript">
+   	// Initialize
+    VSS.init({
+      usePlatformScripts: true, 
+      usePlatformStyles: true,
+      configureModuleLoader: true
+    });
+    VSS.require(["scripts/app"], function () {
+          // Loading succeeded
+          VSS.notifyLoadSucceeded();
+    }); 
 
- 	// Initialize
-  VSS.init({
-    usePlatformScripts: true, 
-    usePlatformStyles: true
-  });
-  VSS.require(["scripts/app"], function () {
-        // Loading succeeded
-        VSS.notifyLoadSucceeded();
-      }); 
-
-    </script>
-
-    <div>
-      Html to handle contributed menu item being clicked, not user-facing. 
-    </div>
-
-  </body>
-  </html>
+   </script>
+ </body>
+ </html>

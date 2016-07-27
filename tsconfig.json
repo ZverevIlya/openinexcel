@@ -6,11 +6,13 @@
         "outDir": "./dist/scripts"
     },
     "filesGlob": [
-        "./scripts/**/*.ts",
+        "./scripts/*.ts",
+        "!**/*.tests.ts",
         "./typings/index.d.ts"
     ],
     "files": [
         "scripts/app.ts",
+        "scripts/testHelper.ts",
         "typings/index.d.ts"
     ]
 }
