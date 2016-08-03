@@ -1,6 +1,5 @@
 import { TestHelper } from "./testHelper";
 
-
 var openQueryAction =  {
     getMenuItems: (context) => {
     var qid = context["query"]["id"];
@@ -13,7 +12,7 @@ var openQueryAction =  {
         }
         else {
         return [<IContributedMenuItem>{
-            title: "Requires Visual Studio '15'",
+            title: "Requires latest Visual Studio",
             text: "Open in Excel",
             icon: "img/miniexcellogo.png",
             action: (actionContext) => { 
@@ -30,7 +29,6 @@ var openQueryAction =  {
 
                 var uri = "tfs://ExcelRequirements/OpenQuery?cn="+collectionUri+"&proj="+projectName+"&qid="+qid;
                 window.location.href= uri;
-                
             }
         }];
     }
@@ -40,7 +38,7 @@ var openQueryAction =  {
 var openWorkItemsAction =  {
     getMenuItems: (context) => {
         return [<IContributedMenuItem>{
-            title: "Requires Visual Studio '15'",
+            title: "Requires latest Visual Studio",
             text: "Open in Excel",
             icon: "img/miniexcellogo.png",
             action: (actionContext) => { 
@@ -81,10 +79,6 @@ var openQueryOnToolbarAction = {
 
                 var uri = "tfs://ExcelRequirements/OpenQuery?cn="+collectionUri+"&proj="+projectName+"&qid="+qid;
 
-                if (!qid) {
-                    qid = actionContext["queryText"];
-                    uri = "tfs://ExcelRequirements/OpenItems?cn="+collectionUri+"&proj="+projectName+"&wid="+qid;
-                }
                 window.location.href= uri;
             }
         }];
