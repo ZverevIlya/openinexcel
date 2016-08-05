@@ -7,12 +7,12 @@
     },
     "filesGlob": [
         "./scripts/*.ts",
-        "!**/*.tests.ts",
         "./typings/index.d.ts"
     ],
     "files": [
         "scripts/app.ts",
-        "scripts/testHelper.ts",
+        "scripts/sharedMethods.ts",
+        "scripts/testHelper.tests.ts",
         "typings/index.d.ts"
     ]
 }
