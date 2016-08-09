@@ -1,9 +1,10 @@
 /// <reference path="../typings/index.d.ts" />
 
 import { expect } from "chai";
-import { App } from "./app";
+import * as myApp from "./app";
+
 describe("Checks for valid input processing", () => {
-    let app = new App();
+    let app = new myApp(); 
 
     describe("Guid check for static queries (false)", () => {
         it("should return false for not a known static query guid", () => {
