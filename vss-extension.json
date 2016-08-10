@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "vsts-open-work-items-in-excel",
-    "version": "0.2.0",
+    "version": "0.4.0",
     "name": "VSTS Open in Excel",
     "scopes": [ "vso.work", "vso.work_write" ],
     "description": "This extension opens work items in Excel from VSTS",

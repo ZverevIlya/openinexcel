@@ -27,7 +27,6 @@ export function createUri(action: string, cn: string, proj: string, qid?: string
     }
 }
 
-
 export interface IQueryObject {
     id: string;
     columns?: string;
@@ -36,7 +35,8 @@ export interface IQueryObject {
 export interface IQueryContributionContext {
     query?: IQueryObject;
     queryText: string;
-    workItemIds: number[];
+    workItemIds: string;
+    columns?: string;
 }
 
 var openQueryAction =  {
@@ -52,7 +52,7 @@ var openQueryAction =  {
                 icon: "img/miniexcellogo.png",
                 action: (actionContext: IQueryContributionContext) => { 
                     
-                    var qid = actionContext["query"]["id"];
+                    var qid = actionContext.query.id;
 
                     var context = VSS.getWebContext();
                     var collectionUri = context.collection.uri;
@@ -78,8 +78,8 @@ var openWorkItemsAction =  {
             text: "Open in Excel",
             icon: "img/miniexcellogo.png",
             action: (actionContext: IQueryContributionContext) => { 
-                var wids = actionContext["query"]["id"];
-                var columns = actionContext["query"]["columns"];
+                var wids = actionContext.workItemIds;
+                var columns = actionContext.columns;
 
                 var context = VSS.getWebContext();
                 var collectionUri = context.collection.uri;
