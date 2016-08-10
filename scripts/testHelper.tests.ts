@@ -1,7 +1,7 @@
 /// <reference path="../typings/index.d.ts" />
 
 import { expect } from "chai";
-import { checkForStaticQuery } from "./appHelper";
+import { checkForStaticQuery } from "./app";
 
 describe("Checks for valid input processing", () => {
     describe("Guid check for static queries (false)", () => {

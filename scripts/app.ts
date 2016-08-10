@@ -39,7 +39,7 @@ export interface IQueryContributionContext {
     columns?: string;
 }
 
-var openQueryAction =  {
+export var openQueryAction =  {
     getMenuItems: (context) =>  {
         var qid = context["query"]["id"];
         if (checkForStaticQuery(qid)) {
@@ -71,7 +71,7 @@ var openQueryAction =  {
     }
 }
 
-var openWorkItemsAction =  {
+export var openWorkItemsAction =  {
     getMenuItems: (context) => {
         return [<IContributedMenuItem>{
             title: "Requires latest Visual Studio",
@@ -97,7 +97,7 @@ var openWorkItemsAction =  {
     }
 }
 
-var openQueryOnToolbarAction = {
+export var openQueryOnToolbarAction = {
     getMenuItems: (context) => {
         return [<IContributedMenuItem>{
             text: "Open in Excel",
@@ -127,8 +127,5 @@ var openQueryOnToolbarAction = {
     }
 }
 
-// Register context menu action provider
-VSS.register("openQueryAction", openQueryAction);
-VSS.register("openWorkItemsAction", openWorkItemsAction);
-VSS.register("openQueryOnToolbarAction", openQueryOnToolbarAction);
+
 
