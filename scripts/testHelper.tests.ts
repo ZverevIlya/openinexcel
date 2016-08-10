@@ -1,10 +1,9 @@
 /// <reference path="../typings/index.d.ts" />
 
 import { expect } from "chai";
-import * as myApp from "./app";
+import { SharedMethods as app } from "./app";
 
 describe("Checks for valid input processing", () => {
-    let app = new myApp(); 
 
     describe("Guid check for static queries (false)", () => {
         it("should return false for not a known static query guid", () => {
