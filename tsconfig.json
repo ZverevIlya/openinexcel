@@ -11,6 +11,7 @@
     ],
     "files": [
         "scripts/app.ts",
+        "scripts/appHelper.ts",
         "scripts/testHelper.tests.ts",
         "typings/index.d.ts"
     ]
